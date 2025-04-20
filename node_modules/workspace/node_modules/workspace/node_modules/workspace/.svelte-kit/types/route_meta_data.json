@@ -1,0 +1,6 @@
+{
+	"/": [],
+	"/api/booking": [
+		"src/routes/api/booking/+server.js"
+	]
+}

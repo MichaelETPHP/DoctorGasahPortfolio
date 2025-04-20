@@ -1,7 +1,4 @@
 {
-  "build": {
-    "env": {
-      "NODE_ENV": "production"
-    }
-  }
+  "installCommand": "npm ci",
+  "outputDirectory": ".svelte-kit/output"
 }
