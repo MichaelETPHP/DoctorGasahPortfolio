@@ -26,32 +26,32 @@
   
   const services = [
     {
-      icon: 'activity',
+      icon: 'icon-treatment',
       title: 'Pediatric Hematology',
       description: 'Diagnosis and treatment of blood disorders in children including anemia, hemophilia, and other bleeding disorders.'
     },
     {
-      icon: 'shield',
+      icon: 'icon-treatment',
       title: 'Pediatric Oncology',
       description: 'Specialized treatment of various childhood cancers with focus on personalized care and evidence-based protocols.'
     },
     {
-      icon: 'thermometer',
+      icon: 'icon-research',
       title: 'Blood Cancer Treatment',
       description: 'Expert management of leukemia, lymphoma, and other blood-related cancers specific to pediatric patients.'
     },
     {
-      icon: 'search',
+      icon: 'icon-research',
       title: 'Neuroblastoma Care',
       description: 'Advanced diagnostic and treatment approaches for neuroblastoma, including integration with international treatment protocols.'
     },
     {
-      icon: 'clipboard',
+      icon: 'icon-consultation',
       title: 'Patient Consultations',
       description: 'Comprehensive evaluations and second opinions for complex hematological and oncological conditions.'
     },
     {
-      icon: 'users',
+      icon: 'icon-support',
       title: 'Family Support & Education',
       description: 'Guidance and resources for families navigating pediatric cancer diagnosis, treatment, and survivorship.'
     }
