@@ -7,17 +7,17 @@
           Dedicated to advancing pediatric hematology and oncology care in Ethiopia through clinical excellence and innovative research.
         </p>
         <div class="flex space-x-4">
-          <a href="#" class="w-10 h-10 rounded-full bg-blue-800 hover:bg-blue-700 flex items-center justify-center transition-colors">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blue-800 hover:bg-blue-700 flex items-center justify-center transition-colors" aria-label="LinkedIn Profile">
             <svg class="feather h-5 w-5">
               <use href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather-sprite.svg#linkedin"/>
             </svg>
           </a>
-          <a href="#" class="w-10 h-10 rounded-full bg-blue-800 hover:bg-blue-700 flex items-center justify-center transition-colors">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blue-800 hover:bg-blue-700 flex items-center justify-center transition-colors" aria-label="Twitter Profile">
             <svg class="feather h-5 w-5">
               <use href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather-sprite.svg#twitter"/>
             </svg>
           </a>
-          <a href="#" class="w-10 h-10 rounded-full bg-blue-800 hover:bg-blue-700 flex items-center justify-center transition-colors">
+          <a href="#contact" class="w-10 h-10 rounded-full bg-blue-800 hover:bg-blue-700 flex items-center justify-center transition-colors" aria-label="Contact Via Email">
             <svg class="feather h-5 w-5">
               <use href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather-sprite.svg#mail"/>
             </svg>

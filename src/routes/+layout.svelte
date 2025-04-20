@@ -5,11 +5,21 @@
   import { onMount } from 'svelte';
   
   onMount(() => {
-    if (typeof feather !== 'undefined') {
-      feather.replace();
-    }
+    // Load Feather icons if needed
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js';
+    script.onload = () => {
+      if (typeof feather !== 'undefined') {
+        feather.replace();
+      }
+    };
+    document.head.appendChild(script);
   });
 </script>
+
+<svelte:head>
+  <link rel="icon" href="/favicon.png" />
+</svelte:head>
 
 <Navbar />
 
