@@ -37,7 +37,7 @@ Mentor, researcher, and advocate for innovative, evidence-based child health sol
     <div class="md:w-1/2 flex justify-center">
       <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-lg transform transition-all duration-700 hover:scale-105" class:opacity-0={!ready} class:opacity-100={ready}>
         <img 
-          src="/images/dr-Gashaw-profile.jpg" 
+          src="/doctor-profile.jpg" 
           alt="Dr. Gashaw A, Pediatric Hematology Oncologist" 
           class="w-full h-full object-cover"
         />
