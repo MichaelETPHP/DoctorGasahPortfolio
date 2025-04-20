@@ -10,7 +10,7 @@ return {
 	assets: new Set(["doctor-profile.jpg","favicon.png","favicon.svg","images/dr-gasah-profile.jpg","images/heart-logo.svg","images/hospital-icon.svg","images/service-icons.svg","images/team-member1.svg","images/team-member2.svg","images/team-member3.svg"]),
 	mimeTypes: {".jpg":"image/jpeg",".png":"image/png",".svg":"image/svg+xml"},
 	_: {
-		client: {start:"_app/immutable/entry/start.CsY980_h.js",app:"_app/immutable/entry/app.B2N3smFo.js",imports:["_app/immutable/entry/start.CsY980_h.js","_app/immutable/chunks/Be571WX0.js","_app/immutable/chunks/CBZ1BmCR.js","_app/immutable/entry/app.B2N3smFo.js","_app/immutable/chunks/CBZ1BmCR.js","_app/immutable/chunks/o-OwQ9Xp.js","_app/immutable/chunks/tSfN_3by.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.D3hYB7NF.js",app:"_app/immutable/entry/app.CStrpG1h.js",imports:["_app/immutable/entry/start.D3hYB7NF.js","_app/immutable/chunks/IB4MPgAM.js","_app/immutable/chunks/CBZ1BmCR.js","_app/immutable/entry/app.CStrpG1h.js","_app/immutable/chunks/CBZ1BmCR.js","_app/immutable/chunks/o-OwQ9Xp.js","_app/immutable/chunks/tSfN_3by.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
