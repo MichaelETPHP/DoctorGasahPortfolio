@@ -76,8 +76,8 @@
           style="transition-delay: {index * 100}ms"
         >
           <div class="flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 text-blue-600 mb-6 mx-auto">
-            <svg class="feather h-8 w-8">
-              <use href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather-sprite.svg#{service.icon}"/>
+            <svg class="h-10 w-10">
+              <use href="/images/service-icons.svg#{service.icon}"/>
             </svg>
           </div>
           <h3 class="text-xl font-semibold text-blue-900 text-center mb-4">{service.title}</h3>
