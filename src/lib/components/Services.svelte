@@ -61,7 +61,10 @@
 <section id="services" class="section bg-blue-50">
   <div class="container-custom">
     <div class="text-center mb-12">
-      <h2 class="section-title">Services & Specialties</h2>
+      <h2 class="section-title relative inline-block">
+        Services & Specialties
+        <span class="absolute bottom-0 left-0 w-full h-1 bg-blue-600"></span>
+      </h2>
       <p class="section-subtitle mx-auto">
         Specialized care for children with blood disorders and cancer
       </p>
@@ -87,7 +90,12 @@
     </div>
     
     <div class="mt-16 text-center">
-      <a href="#contact" class="btn btn-primary">Book an Appointment</a>
+      <a href="#contact" class="btn btn-primary flex items-center justify-center mx-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+        Book an Appointment
+      </a>
     </div>
   </div>
 </section>

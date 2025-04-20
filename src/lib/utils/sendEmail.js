@@ -43,46 +43,99 @@ export async function sendBookingConfirmation(booking) {
   // HTML email content
   const htmlContent = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; color: #333;">
-      <div style="background-color: #1e40af; color: white; padding: 15px; text-align: center; border-radius: 5px 5px 0 0;">
-        <h1 style="margin: 0; font-size: 24px;">New Appointment Request</h1>
+      <div style="text-align: center; margin-bottom: 20px;">
+        <div style="display: inline-block; background-color: #f87171; width: 40px; height: 40px; border-radius: 50%; margin-bottom: 10px;">
+          <!-- Heart logo representation -->
+        </div>
+        <h1 style="margin: 0; font-size: 24px; color: #1e40af;">Dr. Gasah A</h1>
+        <p style="margin: 5px 0 0; color: #6b7280;">Pediatric Hematology Oncologist</p>
+      </div>
+    
+      <div style="background-color: #1e40af; color: white; padding: 15px; text-align: center; border-radius: 5px 5px 0 0; position: relative;">
+        <h2 style="margin: 0; font-size: 20px;">New Appointment Request</h2>
+        <div style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 50px; height: 3px; background-color: #f87171;"></div>
       </div>
       
       <div style="background-color: #f9fafb; padding: 20px; border-radius: 0 0 5px 5px; border: 1px solid #e5e7eb;">
-        <p style="margin-top: 0;"><strong>Patient Name:</strong> ${booking.patientName}</p>
-        <p><strong>Email:</strong> ${booking.email}</p>
-        <p><strong>Phone:</strong> ${booking.phone}</p>
-        <p><strong>Service Requested:</strong> ${booking.service}</p>
-        <p><strong>Preferred Date:</strong> ${booking.date}</p>
-        <p><strong>Preferred Time:</strong> ${booking.time}</p>
+        <div style="background-color: #ebf5ff; border: 1px solid #dbeafe; border-radius: 5px; padding: 15px; margin-bottom: 20px;">
+          <div style="display: flex; align-items: center; margin-bottom: 10px;">
+            <div style="width: 30px; height: 30px; background-color: #dbeafe; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+              <span style="color: #2563eb; font-weight: bold;">i</span>
+            </div>
+            <p style="margin: 0; font-weight: bold; color: #1e40af;">Appointment Details</p>
+          </div>
+          <p style="margin: 0; color: #4b5563;">The following patient has requested an appointment with Dr. Gasah.</p>
+        </div>
+
+        <table style="width: 100%; border-collapse: collapse;">
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 10px 0; font-weight: bold; width: 40%;">Patient Name:</td>
+            <td style="padding: 10px 0;">${booking.patientName}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 10px 0; font-weight: bold;">Email:</td>
+            <td style="padding: 10px 0;">${booking.email}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 10px 0; font-weight: bold;">Phone:</td>
+            <td style="padding: 10px 0;">${booking.phone}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 10px 0; font-weight: bold;">Service Requested:</td>
+            <td style="padding: 10px 0;">${booking.service}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 10px 0; font-weight: bold;">Preferred Date:</td>
+            <td style="padding: 10px 0;">${booking.date}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e5e7eb;">
+            <td style="padding: 10px 0; font-weight: bold;">Preferred Time:</td>
+            <td style="padding: 10px 0;">${booking.time}</td>
+          </tr>
+          ${booking.message ? `
+          <tr>
+            <td style="padding: 10px 0; font-weight: bold;">Additional Message:</td>
+            <td style="padding: 10px 0;">${booking.message}</td>
+          </tr>` : ''}
+        </table>
         
-        ${booking.message ? `<p><strong>Additional Message:</strong> ${booking.message}</p>` : ''}
-        
-        <p style="background-color: #e0f2fe; padding: 10px; border-radius: 5px; margin-top: 20px;">
-          Please contact the patient to confirm this appointment request.
-        </p>
+        <div style="background-color: #e0f2fe; padding: 15px; border-radius: 5px; margin-top: 20px; border-left: 4px solid #3b82f6;">
+          <p style="margin: 0; font-weight: bold;">Action Required:</p>
+          <p style="margin: 5px 0 0;">Please contact the patient to confirm this appointment request.</p>
+        </div>
       </div>
       
-      <div style="text-align: center; margin-top: 20px; color: #6b7280; font-size: 14px;">
-        <p>Dr. Gasah A | Pediatric Hematology Oncologist</p>
+      <div style="text-align: center; margin-top: 20px; padding-top: 20px; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: 14px;">
+        <p style="margin: 0;">Dr. Gasah A | Pediatric Hematology Oncologist</p>
+        <p style="margin: 5px 0 0;">Black Lion Hospital & Betzata Private Clinic, Ethiopia</p>
       </div>
     </div>
   `;
   
   // Plain text version
   const textContent = `
+    DR. GASAH A - PEDIATRIC HEMATOLOGY ONCOLOGIST
+    =============================================
+    
     NEW APPOINTMENT REQUEST
     
+    APPOINTMENT DETAILS:
+    -------------------
     Patient Name: ${booking.patientName}
     Email: ${booking.email}
     Phone: ${booking.phone}
     Service Requested: ${booking.service}
     Preferred Date: ${booking.date}
     Preferred Time: ${booking.time}
-    ${booking.message ? `Additional Message: ${booking.message}` : ''}
+    ${booking.message ? `\nAdditional Message: ${booking.message}` : ''}
     
+    ACTION REQUIRED:
+    --------------
     Please contact the patient to confirm this appointment request.
     
+    --
     Dr. Gasah A | Pediatric Hematology Oncologist
+    Black Lion Hospital & Betzata Private Clinic, Ethiopia
   `;
   
   return sendEmail({
