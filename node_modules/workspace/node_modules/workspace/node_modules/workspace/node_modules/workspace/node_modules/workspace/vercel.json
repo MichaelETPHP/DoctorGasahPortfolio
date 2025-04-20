@@ -1,4 +1,5 @@
 {
   "installCommand": "npm ci",
-  "outputDirectory": ".svelte-kit/output"
+  "outputDirectory": ".svelte-kit/output",
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
