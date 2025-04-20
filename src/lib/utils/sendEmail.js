@@ -1,8 +1,7 @@
-import { MailService } from '@sendgrid/mail';
+import sgMail from '@sendgrid/mail';
 
-// Initialize the mail service with API key
-const mailService = new MailService();
-mailService.setApiKey(import.meta.env.VITE_SENDGRID_API_KEY || process.env.SENDGRID_API_KEY);
+// Initialize SendGrid with API key
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 /**
  * Send an email using SendGrid
@@ -15,19 +14,20 @@ mailService.setApiKey(import.meta.env.VITE_SENDGRID_API_KEY || process.env.SENDG
  */
 export async function sendEmail(options) {
   try {
-    // Set the from email (should be verified in SendGrid)
-    const emailData = {
+    // Default sender email is contact@drgasah.com
+    const msg = {
       to: options.to,
-      from: 'appointments@drgasah.com', // Replace with your verified sender
+      from: 'michaeltaye012@gmail.com', // Use your verified sender
       subject: options.subject,
       text: options.text,
-      html: options.html || options.text
+      html: options.html || options.text // Fall back to text if HTML not provided
     };
 
-    await mailService.send(emailData);
+    await sgMail.send(msg);
+    console.log('Email sent successfully');
     return true;
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('SendGrid email error:', error);
     return false;
   }
 }
@@ -38,59 +38,57 @@ export async function sendEmail(options) {
  * @returns {Promise<boolean>} - Success status
  */
 export async function sendBookingConfirmation(booking) {
-  const to = 'michaeltaye012@gmail.com'; // Admin email
-  const subject = `New Appointment: ${booking.patientName} - ${booking.service}`;
+  const subject = `Appointment Request: ${booking.patientName} for ${booking.service}`;
   
-  const text = `
-New appointment request:
-
-Patient: ${booking.patientName}
-Email: ${booking.email}
-Phone: ${booking.phone}
-Service: ${booking.service}
-Preferred Date: ${booking.date}
-Time: ${booking.time}
-Message: ${booking.message || 'No additional message'}
-
-Please confirm this appointment with the patient.
-`;
-
-  const html = `
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-    .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-    .header { background-color: #3b57f5; color: white; padding: 10px 20px; border-radius: 5px 5px 0 0; }
-    .content { border: 1px solid #ddd; border-top: none; padding: 20px; border-radius: 0 0 5px 5px; }
-    .footer { margin-top: 20px; font-size: 12px; color: #777; }
-    .detail { margin-bottom: 10px; }
-    .label { font-weight: bold; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <h2>New Appointment Request</h2>
+  // HTML email content
+  const htmlContent = `
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; color: #333;">
+      <div style="background-color: #1e40af; color: white; padding: 15px; text-align: center; border-radius: 5px 5px 0 0;">
+        <h1 style="margin: 0; font-size: 24px;">New Appointment Request</h1>
+      </div>
+      
+      <div style="background-color: #f9fafb; padding: 20px; border-radius: 0 0 5px 5px; border: 1px solid #e5e7eb;">
+        <p style="margin-top: 0;"><strong>Patient Name:</strong> ${booking.patientName}</p>
+        <p><strong>Email:</strong> ${booking.email}</p>
+        <p><strong>Phone:</strong> ${booking.phone}</p>
+        <p><strong>Service Requested:</strong> ${booking.service}</p>
+        <p><strong>Preferred Date:</strong> ${booking.date}</p>
+        <p><strong>Preferred Time:</strong> ${booking.time}</p>
+        
+        ${booking.message ? `<p><strong>Additional Message:</strong> ${booking.message}</p>` : ''}
+        
+        <p style="background-color: #e0f2fe; padding: 10px; border-radius: 5px; margin-top: 20px;">
+          Please contact the patient to confirm this appointment request.
+        </p>
+      </div>
+      
+      <div style="text-align: center; margin-top: 20px; color: #6b7280; font-size: 14px;">
+        <p>Dr. Gasah A | Pediatric Hematology Oncologist</p>
+      </div>
     </div>
-    <div class="content">
-      <div class="detail"><span class="label">Patient:</span> ${booking.patientName}</div>
-      <div class="detail"><span class="label">Email:</span> ${booking.email}</div>
-      <div class="detail"><span class="label">Phone:</span> ${booking.phone}</div>
-      <div class="detail"><span class="label">Service:</span> ${booking.service}</div>
-      <div class="detail"><span class="label">Preferred Date:</span> ${booking.date}</div>
-      <div class="detail"><span class="label">Time:</span> ${booking.time}</div>
-      <div class="detail"><span class="label">Message:</span> ${booking.message || 'No additional message'}</div>
-    </div>
-    <div class="footer">
-      <p>Please confirm this appointment with the patient.</p>
-      <p>Dr. Gasah A - Pediatric Hematology Oncologist</p>
-    </div>
-  </div>
-</body>
-</html>
-`;
-
-  return sendEmail({ to, subject, text, html });
+  `;
+  
+  // Plain text version
+  const textContent = `
+    NEW APPOINTMENT REQUEST
+    
+    Patient Name: ${booking.patientName}
+    Email: ${booking.email}
+    Phone: ${booking.phone}
+    Service Requested: ${booking.service}
+    Preferred Date: ${booking.date}
+    Preferred Time: ${booking.time}
+    ${booking.message ? `Additional Message: ${booking.message}` : ''}
+    
+    Please contact the patient to confirm this appointment request.
+    
+    Dr. Gasah A | Pediatric Hematology Oncologist
+  `;
+  
+  return sendEmail({
+    to: 'michaeltaye012@gmail.com', // Replace with your actual email
+    subject,
+    text: textContent,
+    html: htmlContent
+  });
 }

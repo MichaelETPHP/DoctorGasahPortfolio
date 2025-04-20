@@ -3,6 +3,7 @@
   import About from "$lib/components/About.svelte";
   import Services from "$lib/components/Services.svelte";
   import Research from "$lib/components/Research.svelte";
+  import Team from "$lib/components/Team.svelte";
   import Locations from "$lib/components/Locations.svelte";
   import Contact from "$lib/components/Contact.svelte";
 </script>
@@ -16,5 +17,6 @@
 <About />
 <Services />
 <Research />
+<Team />
 <Locations />
 <Contact />
