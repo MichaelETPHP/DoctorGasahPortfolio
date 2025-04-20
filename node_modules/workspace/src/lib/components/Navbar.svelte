@@ -24,9 +24,9 @@
   <div class="container-custom flex items-center justify-between">
     <a href="/" class="flex items-center" aria-label="Home">
       <div class={`w-10 h-10 mr-2 rounded-full flex items-center justify-center ${scrolled ? 'bg-white' : 'bg-blue-100'}`}>
-        <img src="/images/heart-logo.svg" alt="Dr. Gasah A Logo" class="w-7 h-7" />
+        <img src="/images/heart-logo.svg" alt="Dr. Gashaw A Logo" class="w-7 h-7" />
       </div>
-      <span class={`text-xl font-bold ${scrolled ? 'text-blue-900' : 'text-white'}`}>Dr. Gasah A</span>
+      <span class={`text-xl font-bold ${scrolled ? 'text-blue-900' : 'text-white'}`}>Dr. Gashaw A</span>
     </a>
     
     <!-- Desktop Navigation -->

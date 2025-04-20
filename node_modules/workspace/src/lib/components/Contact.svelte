@@ -64,7 +64,7 @@
   <div class="container-custom">
     <div class="text-center mb-12">
       <h2 class="section-title relative inline-block">
-        Contact Dr. Gasah
+        Contact Dr. Gashaw
         <span class="absolute bottom-0 left-0 w-full h-1 bg-blue-600"></span>
       </h2>
       <p class="section-subtitle mx-auto">
@@ -124,7 +124,7 @@
               </div>
               <div>
                 <h4 class="text-lg font-medium text-blue-900 mb-1">Email</h4>
-                <p class="text-gray-700 font-medium">dr.gasah@example.com</p>
+                <p class="text-gray-700 font-medium">dr.Gashaw@example.com</p>
                 <p class="text-gray-500 text-sm">For appointments and inquiries</p>
               </div>
             </div>
@@ -171,7 +171,7 @@
               </div>
               <h3 class="text-2xl font-semibold text-green-800 mb-4">Message Sent!</h3>
               <p class="text-green-700 mb-6">
-                Thank you for reaching out. Dr. Gasah's office will contact you shortly to confirm your appointment or answer your inquiry.
+                Thank you for reaching out. Dr. Gashaw's office will contact you shortly to confirm your appointment or answer your inquiry.
               </p>
               <button 
                 on:click={() => formSubmitted = false} 

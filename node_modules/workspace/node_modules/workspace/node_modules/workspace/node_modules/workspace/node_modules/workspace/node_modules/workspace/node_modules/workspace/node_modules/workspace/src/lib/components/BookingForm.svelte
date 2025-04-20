@@ -77,7 +77,7 @@
 
 <div class="bg-white rounded-xl shadow-md p-8">
   <h3 class="text-2xl font-semibold text-blue-900 mb-6 relative inline-block">
-    Book an Appointment with Dr. Gasah
+    Book an Appointment with Dr. Gashaw
     <span class="absolute bottom-0 left-0 w-3/4 h-1 bg-blue-600"></span>
   </h3>
   
@@ -89,7 +89,7 @@
         </svg>
         Appointment request received successfully!
       </p>
-      <p class="mt-2">We will contact you shortly to confirm your appointment with Dr. Gasah.</p>
+      <p class="mt-2">We will contact you shortly to confirm your appointment with Dr. Gashaw.</p>
       <button 
         class="mt-4 text-blue-600 font-medium hover:text-blue-800 flex items-center"
         on:click={() => status.success = false}
@@ -108,7 +108,7 @@
         </svg>
       </div>
       <div>
-        <h4 class="font-semibold text-blue-900">Dr. Gasah A</h4>
+        <h4 class="font-semibold text-blue-900">Dr. Gashaw A</h4>
         <p class="text-sm text-blue-700">Pediatric Hematology Oncologist</p>
       </div>
     </div>

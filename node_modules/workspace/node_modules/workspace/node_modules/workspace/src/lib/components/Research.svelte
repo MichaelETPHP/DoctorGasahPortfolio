@@ -27,7 +27,7 @@
   const researchAreas = [
     {
       title: "Blood Cancer Research",
-      description: "Dr. Gasah's research on blood cancers focuses on the unique genetic markers and treatment outcomes in Ethiopian children. His work aims to develop protocols optimized for local healthcare resources and genetic profiles.",
+      description: "Dr. Gashaw's research on blood cancers focuses on the unique genetic markers and treatment outcomes in Ethiopian children. His work aims to develop protocols optimized for local healthcare resources and genetic profiles.",
       items: [
         "Genetic profiling of pediatric leukemia in Ethiopian populations",
         "Modified treatment protocols adapted to limited-resource settings",
@@ -36,7 +36,7 @@
     },
     {
       title: "Neuroblastoma Studies",
-      description: "As a leading researcher on pediatric neuroblastoma in East Africa, Dr. Gasah conducts studies on early detection methods, regional prevalence patterns, and optimized treatment approaches.",
+      description: "As a leading researcher on pediatric neuroblastoma in East Africa, Dr. Gashaw conducts studies on early detection methods, regional prevalence patterns, and optimized treatment approaches.",
       items: [
         "Early detection biomarkers for high-risk populations",
         "Regional epidemiological patterns of neuroblastoma",
@@ -84,7 +84,7 @@
     <div class="mt-16 bg-blue-50 p-8 rounded-lg shadow-inner" class:opacity-0={!visible} class:opacity-100={visible} style="transition-delay: 400ms">
       <h3 class="text-xl font-semibold text-blue-900 mb-4 text-center">Research Impact</h3>
       <p class="text-gray-700 text-center mb-6">
-        Dr. Gasah's research has contributed to improved survival rates for children with blood cancers in Ethiopia through locally-adapted treatment protocols and enhanced diagnostic approaches.
+        Dr. Gashaw's research has contributed to improved survival rates for children with blood cancers in Ethiopia through locally-adapted treatment protocols and enhanced diagnostic approaches.
       </p>
       <div class="flex flex-wrap gap-4 justify-center">
         <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm">

@@ -2,7 +2,7 @@
   <div class="container-custom">
     <div class="flex flex-col md:flex-row justify-between mb-12">
       <div class="md:w-1/3 mb-10 md:mb-0">
-        <h3 class="text-2xl font-bold mb-6">Dr. Gasah A</h3>
+        <h3 class="text-2xl font-bold mb-6">Dr. Gashaw A</h3>
         <p class="text-blue-200 mb-6 max-w-sm">
           Dedicated to advancing pediatric hematology and oncology care in Ethiopia through clinical excellence and innovative research.
         </p>
@@ -76,7 +76,7 @@
     </div>
     
     <div class="pt-8 border-t border-blue-800 text-center text-blue-300 text-sm">
-      <p>&copy; {new Date().getFullYear()} Dr. Gasah A. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} Dr. Gashaw A. All rights reserved.</p>
     </div>
   </div>
 </footer>
