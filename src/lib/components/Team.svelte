@@ -26,21 +26,15 @@
   
   const team = [
     {
-      name: "Dr. Sarah Johnson",
-      role: "Oncology Specialist",
-      bio: "Dr. Johnson specializes in pediatric solid tumors and works closely with Dr. Gasah on complex cases. She has over 10 years of experience in pediatric oncology.",
-      image: "/images/team-member1.svg"
+      name: "Dr. Gasah A",
+      role: "Pediatric Hematology Oncologist",
+      bio: "Dr. Gasah specializes in pediatric blood cancer and neuroblastoma research. He leads the chemotherapy team at Black Lion Hospital and provides personalized care for children with cancer.",
+      image: "/images/dr-gasah-profile.jpg"
     },
     {
-      name: "Dr. Michael Chen",
-      role: "Hematologist",
-      bio: "Dr. Chen is an expert in childhood leukemia and blood disorders. He collaborates with Dr. Gasah on research projects and assists in developing treatment protocols.",
-      image: "/images/team-member2.svg"
-    },
-    {
-      name: "Nurse Emma Bekele",
-      role: "Oncology Nurse",
-      bio: "Nurse Bekele is a dedicated pediatric oncology nurse who provides compassionate care to patients undergoing chemotherapy. She specializes in patient education and supportive care.",
+      name: "Nurse Anmut T",
+      role: "Senior Oncology Nurse",
+      bio: "Nurse Anmut is a dedicated pediatric oncology nurse with extensive experience in chemotherapy administration. She provides compassionate care and support for patients and their families.",
       image: "/images/team-member3.svg"
     }
   ];
@@ -49,27 +43,35 @@
 <section id="team" class="section bg-gray-50">
   <div class="container-custom">
     <div class="text-center mb-12">
-      <h2 class="section-title">Chemotherapy Team</h2>
+      <h2 class="section-title relative inline-block">
+        Chemotherapy Team
+        <span class="absolute bottom-0 left-0 w-full h-1 bg-blue-600"></span>
+      </h2>
       <p class="section-subtitle max-w-3xl mx-auto">
-        Dr. Gasah works with a dedicated team of specialists to provide comprehensive care for children with cancer.
+        Our specialized team is dedicated to providing comprehensive care for children with cancer at Black Lion Hospital.
       </p>
     </div>
     
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
       {#each team as member, index}
         <div 
-          class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
+          class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1"
           class:opacity-0={!visible}
           class:opacity-100={visible}
           style="transition-delay: {index * 200}ms"
         >
-          <img 
-            src={member.image} 
-            alt={member.name} 
-            class="w-full h-64 object-cover"
-          />
+          <div class="h-64 overflow-hidden">
+            <img 
+              src={member.image} 
+              alt={member.name} 
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+            />
+          </div>
           <div class="p-6">
-            <h3 class="text-xl font-semibold text-blue-900 mb-1">{member.name}</h3>
+            <h3 class="text-xl font-semibold text-blue-900 mb-1 relative inline-block">
+              {member.name}
+              <span class="absolute bottom-0 left-0 w-3/4 h-0.5 bg-blue-600"></span>
+            </h3>
             <p class="text-blue-600 font-medium mb-3">{member.role}</p>
             <p class="text-gray-600">{member.bio}</p>
           </div>
