@@ -63,9 +63,7 @@
         >
           <div class="flex items-center mb-6">
             <div class="w-14 h-14 rounded-full bg-blue-100 text-blue-900 flex items-center justify-center mr-4">
-              <svg class="feather h-6 w-6">
-                <use href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather-sprite.svg#{location.icon}"/>
-              </svg>
+              <img src="/images/hospital-icon.svg" alt="Hospital icon" class="w-8 h-8" />
             </div>
             <div>
               <h3 class="text-2xl font-semibold">{location.name}</h3>

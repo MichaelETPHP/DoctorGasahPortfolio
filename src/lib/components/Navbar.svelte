@@ -23,16 +23,43 @@
 <header class={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
   <div class="container-custom flex items-center justify-between">
     <a href="/" class="flex items-center" aria-label="Home">
+      <img src="/images/heart-logo.svg" alt="Dr. Gasah A Logo" class="w-10 h-10 mr-2" />
       <span class={`text-xl font-bold ${scrolled ? 'text-blue-900' : 'text-white'}`}>Dr. Gasah A</span>
     </a>
     
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex items-center space-x-8">
-      <a href="#about" class={`${scrolled ? 'text-gray-700' : 'text-white'} hover:text-blue-500 transition-colors`}>About</a>
-      <a href="#services" class={`${scrolled ? 'text-gray-700' : 'text-white'} hover:text-blue-500 transition-colors`}>Services</a>
-      <a href="#research" class={`${scrolled ? 'text-gray-700' : 'text-white'} hover:text-blue-500 transition-colors`}>Research</a>
-      <a href="#locations" class={`${scrolled ? 'text-gray-700' : 'text-white'} hover:text-blue-500 transition-colors`}>Locations</a>
-      <a href="#contact" class="btn btn-primary">Contact</a>
+      <a href="#about" class={`flex items-center ${scrolled ? 'text-gray-700' : 'text-white'} hover:text-blue-500 transition-colors`}>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+        </svg>
+        About
+      </a>
+      <a href="#services" class={`flex items-center ${scrolled ? 'text-gray-700' : 'text-white'} hover:text-blue-500 transition-colors`}>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+        </svg>
+        Services
+      </a>
+      <a href="#research" class={`flex items-center ${scrolled ? 'text-gray-700' : 'text-white'} hover:text-blue-500 transition-colors`}>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+        </svg>
+        Research
+      </a>
+      <a href="#locations" class={`flex items-center ${scrolled ? 'text-gray-700' : 'text-white'} hover:text-blue-500 transition-colors`}>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        Locations
+      </a>
+      <a href="#contact" class="btn btn-primary flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+        Contact
+      </a>
     </nav>
     
     <!-- Mobile Menu Button -->
@@ -63,29 +90,55 @@
       <nav class="container-custom py-4 flex flex-col space-y-4">
         <a 
           href="#about" 
-          class="text-gray-700 hover:text-blue-500 transition-colors px-4 py-2"
+          class="flex items-center text-gray-700 hover:text-blue-500 transition-colors px-4 py-2"
           on:click={toggleMenu}
-        >About</a>
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+          About
+        </a>
         <a 
           href="#services" 
-          class="text-gray-700 hover:text-blue-500 transition-colors px-4 py-2"
+          class="flex items-center text-gray-700 hover:text-blue-500 transition-colors px-4 py-2"
           on:click={toggleMenu}
-        >Services</a>
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+          </svg>
+          Services
+        </a>
         <a 
           href="#research" 
-          class="text-gray-700 hover:text-blue-500 transition-colors px-4 py-2"
+          class="flex items-center text-gray-700 hover:text-blue-500 transition-colors px-4 py-2"
           on:click={toggleMenu}
-        >Research</a>
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+          </svg>
+          Research
+        </a>
         <a 
           href="#locations" 
-          class="text-gray-700 hover:text-blue-500 transition-colors px-4 py-2"
+          class="flex items-center text-gray-700 hover:text-blue-500 transition-colors px-4 py-2"
           on:click={toggleMenu}
-        >Locations</a>
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          Locations
+        </a>
         <a 
           href="#contact" 
-          class="text-blue-600 font-medium px-4 py-2"
+          class="flex items-center text-blue-600 font-medium px-4 py-2"
           on:click={toggleMenu}
-        >Contact</a>
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          Contact
+        </a>
       </nav>
     </div>
   {/if}
