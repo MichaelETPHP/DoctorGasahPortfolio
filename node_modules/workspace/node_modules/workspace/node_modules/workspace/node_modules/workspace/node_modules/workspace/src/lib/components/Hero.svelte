@@ -20,11 +20,7 @@
       MD, MPH | Specialist in Pediatrics & Child Health
       </h2>
       <p class="text-lg md:text-xl mb-8 text-blue-100 max-w-xl">
-<<<<<<< HEAD
-        Dedicated to advancing care and research in pediatric blood cancers and neuroblastoma in Ethiopia.
-=======
       Dedicated to advancing care and research in pediatric blood cancers and neuroblastoma in Ethiopia.
->>>>>>> cbaa4edbefea5567725eebd51d3788d5b369fddd
       </p>
       <div class="flex flex-wrap gap-4">
         <a href="#contact" class="btn btn-primary bg-white text-blue-900 hover:bg-blue-50">
