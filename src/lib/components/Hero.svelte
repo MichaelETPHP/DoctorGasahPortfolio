@@ -20,9 +20,7 @@
       MD, MPH | Specialist in Pediatrics & Child Health
       </h2>
       <p class="text-lg md:text-xl mb-8 text-blue-100 max-w-xl">
-        Expert in treating childhood blood disorders and cancers with personalized, compassionate care.
-Bridging clinical excellence with research to advance pediatric healthcare outcomes.
-Mentor, researcher, and advocate for innovative, evidence-based child health solutions.
+      Dedicated to advancing care and research in pediatric blood cancers and neuroblastoma in Ethiopia.
       </p>
       <div class="flex flex-wrap gap-4">
         <a href="#contact" class="btn btn-primary bg-white text-blue-900 hover:bg-blue-50">
