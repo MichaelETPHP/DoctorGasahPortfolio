@@ -6,6 +6,7 @@
   import Team from "$lib/components/Team.svelte";
   import Locations from "$lib/components/Locations.svelte";
   import Contact from "$lib/components/Contact.svelte";
+  import AwardNotification from "$lib/components/AwardNotification.svelte";
 </script>
 
 <svelte:head>
@@ -20,3 +21,4 @@
 <Team />
 <Locations />
 <Contact />
+<AwardNotification />
