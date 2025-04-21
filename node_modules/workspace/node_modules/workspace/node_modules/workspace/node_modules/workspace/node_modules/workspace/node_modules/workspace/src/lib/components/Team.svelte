@@ -29,13 +29,13 @@
       name: "Dr. Gashaw A",
       role: "Pediatric Hematology Oncologist",
       bio: "Dr. Gashaw specializes in pediatric blood cancer and neuroblastoma research. He leads the chemotherapy team at Black Lion Hospital and provides personalized care for children with cancer.",
-      image: "/images/dr-Gashaw-profile.jpg"
+      image: "/doctor-profile.jpg"
     },
     {
       name: "Nurse Anmut T",
       role: "Senior Oncology Nurse",
       bio: "Nurse Anmut is a dedicated pediatric oncology nurse with extensive experience in chemotherapy administration. She provides compassionate care and support for patients and their families.",
-      image: "/images/team-member3.svg"
+      image: "/doctor-profile.jpg"
     }
   ];
 </script>

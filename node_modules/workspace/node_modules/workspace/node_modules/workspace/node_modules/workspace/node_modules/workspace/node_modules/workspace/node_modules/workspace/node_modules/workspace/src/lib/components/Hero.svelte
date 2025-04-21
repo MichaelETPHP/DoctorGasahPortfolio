@@ -20,9 +20,7 @@
       MD, MPH | Specialist in Pediatrics & Child Health
       </h2>
       <p class="text-lg md:text-xl mb-8 text-blue-100 max-w-xl">
-        Expert in treating childhood blood disorders and cancers with personalized, compassionate care.
-Bridging clinical excellence with research to advance pediatric healthcare outcomes.
-Mentor, researcher, and advocate for innovative, evidence-based child health solutions.
+        Dedicated to advancing care and research in pediatric blood cancers and neuroblastoma in Ethiopia.
       </p>
       <div class="flex flex-wrap gap-4">
         <a href="#contact" class="btn btn-primary bg-white text-blue-900 hover:bg-blue-50">
@@ -37,7 +35,7 @@ Mentor, researcher, and advocate for innovative, evidence-based child health sol
     <div class="md:w-1/2 flex justify-center">
       <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-lg transform transition-all duration-700 hover:scale-105" class:opacity-0={!ready} class:opacity-100={ready}>
         <img 
-          src="/images/dr-Gashaw-profile.jpg" 
+          src="/doctor-profile.jpg" 
           alt="Dr. Gashaw A, Pediatric Hematology Oncologist" 
           class="w-full h-full object-cover"
         />
