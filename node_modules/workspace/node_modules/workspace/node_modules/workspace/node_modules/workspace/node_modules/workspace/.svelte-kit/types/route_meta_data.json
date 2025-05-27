@@ -1,6 +1,10 @@
 {
 	"/": [],
+	"/admin/bookings": [],
 	"/api/booking": [
 		"src/routes/api/booking/+server.js"
+	],
+	"/api/booking/list": [
+		"src/routes/api/booking/list/+server.js"
 	]
 }

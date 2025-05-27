@@ -30,7 +30,7 @@
       role: "Senior Consultant",
       address: "Churchill Avenue, Addis Ababa, Ethiopia",
       hours: "Monday, Wednesday, Friday: 8:00 AM - 4:00 PM",
-      description: "Dr. Gashaw serves as a senior consultant at Black Lion Hospital, Ethiopia's premier referral and teaching hospital. Here, he leads the pediatric hematology-oncology team and supervises complex cases referred from throughout the country.",
+      description: "Dr. Gasah serves as a senior consultant at Black Lion Hospital, Ethiopia's premier referral and teaching hospital. Here, he leads the pediatric hematology-oncology team and supervises complex cases referred from throughout the country.",
       icon: "home"
     },
     {
@@ -38,7 +38,7 @@
       role: "Specialist Consultant",
       address: "Bole Road, Addis Ababa, Ethiopia",
       hours: "Tuesday, Thursday: 9:00 AM - 6:00 PM, Saturday: 9:00 AM - 1:00 PM",
-      description: "At Betzata Private Clinic, Dr. Gashaw provides specialized care in a private setting. The clinic offers personalized attention, shorter waiting times, and continuity of care for patients requiring ongoing treatment.",
+      description: "At Betzata Private Clinic, Dr. Gasah provides specialized care in a private setting. The clinic offers personalized attention, shorter waiting times, and continuity of care for patients requiring ongoing treatment.",
       icon: "briefcase"
     }
   ];
@@ -49,7 +49,7 @@
     <div class="text-center mb-12">
       <h2 class="section-title text-white">Work Locations</h2>
       <p class="section-subtitle text-blue-200 mx-auto">
-        Where you can find Dr. Gashaw's clinical practice
+        Where you can find Dr. Gasah's clinical practice
       </p>
     </div>
     

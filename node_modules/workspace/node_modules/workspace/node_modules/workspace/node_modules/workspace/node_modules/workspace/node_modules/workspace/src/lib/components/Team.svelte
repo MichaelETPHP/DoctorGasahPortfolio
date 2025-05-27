@@ -26,19 +26,20 @@
   
   const team = [
     {
-      name: "Dr. Gashaw A",
+      name: "Dr. Gasah A",
       role: "Pediatric Hematology Oncologist",
-      bio: "Dr. Gashaw specializes in pediatric blood cancer and neuroblastoma research. He leads the chemotherapy team at Black Lion Hospital and provides personalized care for children with cancer.",
-      image: "/doctor-profile.jpg"
+      bio: "Dr. Gasah specializes in pediatric blood cancer and neuroblastoma research. He leads the chemotherapy team at Black Lion Hospital and provides personalized care for children with cancer.",
+      image: "/images/dr-gasah-profile.jpg"
     },
     {
       name: "Nurse Anmut T",
       role: "Senior Oncology Nurse",
       bio: "Nurse Anmut is a dedicated pediatric oncology nurse with extensive experience in chemotherapy administration. She provides compassionate care and support for patients and their families.",
-      image: "/doctor-profile.jpg"
+      image: "/images/team-member3.svg"
     }
-    ];
+  ];
 </script>
+
 <section id="team" class="section bg-gray-50">
   <div class="container-custom">
     <div class="text-center mb-12">

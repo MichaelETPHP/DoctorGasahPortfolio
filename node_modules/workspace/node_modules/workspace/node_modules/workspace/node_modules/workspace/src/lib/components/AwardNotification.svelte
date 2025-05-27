@@ -1,4 +1,3 @@
-
 <script>
   import { onMount } from 'svelte';
   let show = false;
@@ -26,6 +25,14 @@
   <div class="relative bg-white rounded-xl shadow-2xl max-w-2xl w-full transform transition-all duration-500"
        class:scale-95={!show}
        class:opacity-0={!show}>
+    <!-- Close Button -->
+    <button
+      class="absolute top-3 right-3 text-gray-400 hover:text-blue-600 text-2xl font-bold focus:outline-none"
+      aria-label="Close"
+      on:click={() => show = false}
+    >
+      &times; 
+    </button>
     <div class="p-6">
       <!-- Award Badge -->
       <div class="absolute -top-12 left-1/2 transform -translate-x-1/2">
@@ -42,7 +49,7 @@
         </h3>
         
         <div class="flex justify-center mb-6">
-          <img src="/images/aw.png" alt="Dr. Gashaw receiving award" class="w-72 h-auto object-cover rounded-lg shadow-lg" />
+          <img src="/award.jpg" alt="Dr. Gashaw receiving award" class="w-72 h-auto object-cover rounded-lg shadow-lg" />
         </div>
         
         <div class="space-y-4 text-gray-600">
