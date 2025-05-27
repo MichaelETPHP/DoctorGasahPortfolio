@@ -25,7 +25,7 @@
   });
 </script>
 
-<section id="about" class="py-20 bg-gradient-to-b from-white to-blue-50">
+<section id="about" class="pt-32 pb-20 md:pt-20 bg-gradient-to-b from-white to-blue-50">
   <div class="container mx-auto px-4 max-w-7xl">
     <div class="text-center mb-16">
       <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4 tracking-tight">

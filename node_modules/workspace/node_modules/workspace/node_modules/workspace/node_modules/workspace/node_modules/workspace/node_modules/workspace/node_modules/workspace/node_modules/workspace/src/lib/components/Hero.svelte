@@ -64,7 +64,7 @@
       </div>
 
       <!-- Image Section -->
-      <div class="relative md:w-1/2 mt-8 md:mt-0">
+      <div class="relative w-full md:w-1/2 mt-8 md:mt-0">
         <div class="w-full max-w-md mx-auto">
           <!-- Decorative elements behind image -->
           <div class="hidden md:block absolute -top-6 -left-6 w-24 h-24 rounded-full bg-blue-500/20 backdrop-blur-sm"></div>
