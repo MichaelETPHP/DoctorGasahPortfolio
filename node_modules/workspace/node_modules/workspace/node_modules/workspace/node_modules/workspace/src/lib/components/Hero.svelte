@@ -18,7 +18,7 @@
   </div>
 
   <!-- Hero Content -->
-  <div class="container mx-auto px-4 pt-16 pb-8 h-[100dvh] flex flex-col justify-between relative z-10">
+  <div class="container mx-auto px-4 pt-16 pb-32 md:pb-8 h-[100dvh] flex flex-col justify-between relative z-10">
     <!-- Main content area -->
     <div class="flex flex-col md:flex-row items-center justify-center flex-grow gap-8 md:gap-12">
       <!-- Text Content -->
@@ -45,16 +45,17 @@
           Dedicated to advancing care and research in pediatric blood cancers and neuroblastoma in Ethiopia.
         </p>
         
+        <!-- Action Buttons (Visible on all devices, responsive size) -->
         <div class="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
           <a href="#contact" 
-             class="btn bg-white text-blue-900 hover:bg-blue-50 py-3 px-6 md:py-3 md:px-8 rounded-full transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+             class="btn bg-white text-blue-900 hover:bg-blue-50 py-2 px-4 md:py-3 md:px-8 text-sm md:text-base rounded-full transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
             Book Appointment
           </a>
           <a href="#about" 
-             class="btn border-2 border-white text-white hover:bg-white/10 py-3 px-6 md:py-3 md:px-8 rounded-full transition-all duration-300 flex items-center gap-2">
+             class="btn border-2 border-white text-white hover:bg-white/10 py-2 px-4 md:py-3 md:px-8 text-sm md:text-base rounded-full transition-all duration-300 flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -64,21 +65,22 @@
       </div>
 
       <!-- Image Section -->
-      <div class="relative w-full md:w-1/2 mt-8 md:mt-0">
-        <div class="w-full max-w-md mx-auto">
+      <div class="relative w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
+        <div class="w-full max-w-xs sm:max-w-md md:max-w-md mx-auto">
           <!-- Decorative elements behind image -->
           <div class="hidden md:block absolute -top-6 -left-6 w-24 h-24 rounded-full bg-blue-500/20 backdrop-blur-sm"></div>
           <div class="hidden md:block absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-blue-400/20 backdrop-blur-sm"></div>
           
           <!-- Profile image with frame -->
-          <div class="relative p-2 md:p-3 bg-gradient-to-br from-white/30 to-white/5 backdrop-blur-md rounded-2xl shadow-2xl">
+          <div class="relative p-2 md:p-3 bg-gradient-to-br from-white/30 to-white/5 backdrop-blur-md rounded-2xl shadow-2xl"
+               style="transform: translateY(-1.5rem); box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);">
             <img 
               src="/images/dr-gasah-profile.jpg" 
               alt="Dr. Gasah A"
               loading="eager"
               decoding="async"
               fetchpriority="high"
-              class="w-full h-auto rounded-xl object-cover relative z-10"
+              class="w-full h-auto rounded-xl object-cover relative z-10 shadow-lg"
             />
           
             <!-- Certification Badge -->
