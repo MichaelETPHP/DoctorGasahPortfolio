@@ -6,5 +6,8 @@
 	],
 	"/api/booking/list": [
 		"src/routes/api/booking/list/+server.js"
+	],
+	"/api/telegram": [
+		"src/routes/api/telegram/+server.js"
 	]
 }

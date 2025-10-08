@@ -7,6 +7,7 @@
   import Locations from "$lib/components/Locations.svelte";
   import Contact from "$lib/components/Contact.svelte";
   import AwardNotification from "$lib/components/AwardNotification.svelte";
+  import TikTokSection from "$lib/components/TikTokSection.svelte";
 </script>
 
 <svelte:head>
@@ -19,6 +20,7 @@
 <Services />
 <Research />
 <Team />
+<TikTokSection />
 <Locations />
 <Contact />
 <AwardNotification />

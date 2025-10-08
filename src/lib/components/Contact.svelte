@@ -34,7 +34,12 @@
     };
   });
   
-  function handleSubmit(event) {
+  // Reset error when user starts typing
+  $: if (formError && (name || email || message)) {
+    formError = false;
+  }
+  
+  async function handleSubmit(event) {
     event.preventDefault();
     
     // Validate form
@@ -42,9 +47,24 @@
       formError = true;
       return;
     }
-    
-    // In a real application, we would send the form data to a server
-    // For now, we'll just simulate a successful submission
+
+    // Send to Telegram API
+    try {
+      const telegramRes = await fetch('/api/telegram/telegram', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, phone, message })
+      });
+      const telegramJson = await telegramRes.json();
+      if (!telegramRes.ok || !telegramJson.success) {
+        formError = true;
+        return;
+      }
+    } catch (err) {
+      formError = true;
+      return;
+    }
+
     formSubmitted = true;
     formError = false;
     
