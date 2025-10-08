@@ -9,5 +9,6 @@
 	],
 	"/api/telegram": [
 		"src/routes/api/telegram/+server.js"
-	]
+	],
+	"/services": []
 }

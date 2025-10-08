@@ -134,6 +134,18 @@
       {/each}
     </div>
     
+    <div class="mt-10 mb-2 text-center">
+      <a 
+        href="/services" 
+        class="inline-flex items-center px-6 py-3 md:px-8 md:py-4 border-2 border-blue-600 text-blue-700 rounded-full transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+        View all services
+      </a>
+    </div>
+    
     <!-- Call to Action -->
     <div class="mt-12 md:mt-16 text-center">
       <a 

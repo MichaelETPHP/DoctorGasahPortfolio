@@ -137,6 +137,9 @@
       </a>
     </div>
   </div>
+  
+  <!-- Bottom gradient overlay -->
+  <div class="absolute bottom-0 left-0 right-0 h-24 sm:h-28 lg:h-32 bg-gradient-to-t from-blue-900/90 via-blue-900/40 to-transparent pointer-events-none"></div>
 </section>
 
 <style>
